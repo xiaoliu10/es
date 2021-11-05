@@ -1,0 +1,15 @@
+server:
+  port: 8181
+spring:
+  elasticsearch:
+    rest:
+      uris: 47.111.152.165:9200
+  data:
+    elasticsearch:
+      client:
+        reactive:
+          endpoints: http://47.111.152.165:9200
+          use-ssl: false
+      repositories:
+        enabled: true
+      cluster-nodes:
